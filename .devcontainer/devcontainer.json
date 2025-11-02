@@ -15,5 +15,76 @@
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "rustc --version"
+	"postCreateCommand": "rustc --version",
+
+	// Additional common options (commented out):
+
+	// Forward ports from container to host
+	// "forwardPorts": [8080, 3000],
+
+	// Mount additional volumes
+	// "mounts": [
+	//   "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached"
+	// ],
+
+	// Configure tool-specific properties
+	// "settings": {
+	//   "terminal.integrated.shell.linux": "/bin/bash",
+	//   "rust-analyzer.checkOnSave.command": "clippy"
+	// },
+
+	// Add non-root user
+	// "remoteUser": "vscode",
+
+	// Set environment variables
+	// "remoteEnv": {
+	//   "RUST_BACKTRACE": "1"
+	// },
+
+	// Add additional features
+	// "features": {
+	//   "docker-in-docker": "latest",
+	//   "git": "latest",
+	//   "github-cli": "latest"
+	// },
+
+	// Run commands on container startup
+	// "onCreateCommand": "cargo install cargo-watch",
+	// "updateContentCommand": "cargo update",
+	// "postStartCommand": "cargo build",
+
+	// Configure container-specific settings
+	// "containerEnv": {
+	//   "CARGO_TERM_COLOR": "always"
+	// },
+
+	// Add capabilities
+	// "capAdd": ["SYS_PTRACE"],
+	// "securityOpt": ["seccomp=unconfined"],
+
+	// Override default container user
+	// "containerUser": "vscode",
+
+	// Set shutdown action
+	// "shutdownAction": "stopContainer",
+
+	// Set workspace mount consistency
+	// "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+	// "workspaceFolder": "/workspace",
+
+	// Add privileged flag
+	// "privileged": true,
+
+	// Configure init process
+	// "init": true,
+
+	// Override default command
+	// "overrideCommand": false,
+
+	// Add additional build arguments
+	// "build": {
+	//   "args": {
+	//     "VARIANT": "bullseye"
+	//   }
+	// }
 }
