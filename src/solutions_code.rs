@@ -39,7 +39,7 @@ pub fn solution1(arr: &mut Vec<i32>) -> i32 {
     n + 1
 }
 
-/* 
+/*
 This is an example of an optimized C++ solution how can we get a more idiomatic Rust solution  using HashSet
 */
 pub fn solution3(arr: &Vec<i32>) -> i32 {
