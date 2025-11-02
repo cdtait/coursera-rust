@@ -13,13 +13,19 @@
 			"extensions": [
 				"rust-lang.rust-analyzer",
 				"vadimcn.vscode-lldb",
-				"GitHub.copilot-nightly"
-			]
+				"GitHub.copilot-nightly",
+				"serayuzgur.crates",
+				"tamasfe.even-better-toml"
+			],
+			"settings": {
+				"rust-analyzer.check.command": "clippy",
+				"rust-analyzer.checkOnSave.command": "clippy"
+			}
 		}
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "rustc --version",
+	"postCreateCommand": "rustup component add rustfmt clippy && cargo build"
 
 	// Additional common options (commented out):
 
