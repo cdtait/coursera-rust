@@ -18,4 +18,6 @@ fn main() {
 
     let solution = solutions_code::solution1(&mut vec![1, 3, 6, 4, 1, 2]);
     println!("Solution1 Result: {}", solution);
+    let solution_hashset = solutions_code::solution3(&vec![1, 3, 6, 4, 1, 2]);
+    println!("Solution3 Result: {}", solution_hashset);
 }
