@@ -1,4 +1,5 @@
 mod reuters_code;
+mod solutions_code;
 use std::env;
 
 fn main() {
@@ -14,4 +15,7 @@ fn main() {
 
     let reuters_code = reuters_code::generate_reuters_code(underlying_name, contract_month);
     println!("Reuters Code: {}", reuters_code);
+
+    let solution = solutions_code::solution1(&mut vec![1, 3, 6, 4, 1, 2]);
+    println!("Solution1 Result: {}", solution);
 }
